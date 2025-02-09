@@ -1,0 +1,40 @@
+@media only screen and  (min-width:0px) and (max-width: 785px) {
+    #home {
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #home .container .content,
+    #home .container .myimage
+    
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .about-me .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me .container .left-content,
+    .about-me .container .right-content,
+    .about-me .cv-conatiner 
+{
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+}
