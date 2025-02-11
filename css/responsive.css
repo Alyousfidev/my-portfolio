@@ -1,12 +1,16 @@
-@media only screen and  (min-width:0px) and (max-width: 785px) {
+@media only screen and (min-width: 0px) and (max-width: 785px) {
+    body{
+        width: 100%;
+    }
     #home {
+        width: auto;
         height: auto;
-        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     #home .container {
         display: flex;
         flex-direction: column;
@@ -16,25 +20,111 @@
     }
 
     #home .container .content,
-    #home .container .myimage
-    
-    {
+    #home .container .myimage {
         width: 100%;
         margin-bottom: 40px;
     }
-    .about-me .container{
+
+    .about-me .container {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .about-me .container .left-content,
     .about-me .container .right-content,
-    .about-me .cv-conatiner 
-{
-    width: 100%;
-    margin-bottom: 10px;
-    align-items: center;
-}
+    .about-me .cv-container {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center; /* محاذاة النصوص إلى الوسط */
+    }
+    .gallarys{
+        width: 95%;
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center ;
+        align-content: center;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 0;
+        overflow: hidden;
+    }
+    .gallary-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .gallary {
+        height: 270px;
+        display: flex;
+        overflow-x: scroll;
+        padding: 0 5px;
+        overflow: hidden;
+        box-sizing: border-box;
+       
+    
+    }
+    .gallary div {
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+        padding: 10px;;
+        justify-content: center;
+    }
+    
+    .gallary div img{
+        width: 280px;
+        height: 85%;
+        filter: grayscale(90%);
+        padding: 0 10px;
+        transition: transform 0.5s linear;
+    }
+    .gallary div img:hover {
+        filter:grayscale(0) ;
+        transform: scale(1.1);
+        border: 2px solid #F57C00;
+        position: relative;
+        z-index: 999;
+    }
+    .gallary::-webkit-scrollbar{
+        flex: none;
+    }
+    .nextBtn
+    {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      margin: 5px;
+      margin-bottom: 40px;
+      position: absolute;
+      left: 10px;
+      z-index: 9999;
+    }
+    
+    .backBtn{
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      align-self: center;
+      margin: 5px;
+      margin-bottom: 40px;
+      position: absolute;
+      right: 40px;
+      z-index: 9999;
+    }
+    
+    .contact {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+    footer{
+        display: none;
+    }
 }
