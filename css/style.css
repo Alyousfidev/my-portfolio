@@ -14,21 +14,17 @@
 
     
 }
-<<<<<<< HEAD
-=======
 
 input{
     outline:none;
 }
->>>>>>> ed17bbe ( edit navbar)
+
+
 * {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 50f8623 ( edit responsive)
->>>>>>> ed17bbe ( edit navbar)
+
 body{
     background-color: var(--main-color);
     color: var(--primary-text-color);
