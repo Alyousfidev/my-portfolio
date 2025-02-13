@@ -105,3 +105,18 @@ let timeContainerArab = document.querySelector(".time-container-arab")
     
 setInterval(updateTimeArab, 1000);
 updateTime()
+
+
+function switchLanguage(lang) {
+    if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.getElementById('search-box').setAttribute('placeholder', 'بحث');
+        document.querySelectorAll('.engl').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.arab').forEach(el => el.style.display = 'inline');
+    } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.getElementById('search-box').setAttribute('placeholder', 'Search');
+        document.querySelectorAll('.engl').forEach(el => el.style.display = 'inline');
+        document.querySelectorAll('.arab').forEach(el => el.style.display = 'none');
+    }
+}

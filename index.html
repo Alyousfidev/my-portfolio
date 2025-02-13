@@ -26,7 +26,7 @@
 
       </div>
    
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark" >
         <div class="container-fluid">
           <a class="navbar-brand engl" href="#home" id="arb-log">AMEEN ALYOUSFI</a>
           <a class="navbar-brand arab" href="#home" id="arb-log">امين اليوسفي</a>
@@ -35,7 +35,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
               <li class="nav-item">
                 <a class="nav-link active engl" aria-current="page" href="#home" id="home-link">Home</a>
                 <a class="nav-link active arab" aria-current="page" href="#home" id="home-link">الرئيسية</a>
@@ -60,10 +60,10 @@
             </ul>
             
             <form class="d-flex">
-              <input class="form-control me-2 engl" type="search" placeholder="Search" aria-label="Search">
-              <input class="form-control me-2 arab" type="search" placeholder="بحث" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-box">
+              <!-- <input class="form-control me-2 arab" type="search" placeholder="بحث" aria-label="Search"> -->
               <button class="btn btn-outline-success engl" type="submit" id="search-icon">Search</button>
-              <button class="btn btn-outline-success arab" type="submit" id="search-icon">بحث</button>
+              <button class="btn btn-outline-success arab" type="submit" id="search-icon">Search</button>
             </form>
           </div>
         </div>
@@ -375,31 +375,31 @@
         </div>
       </section>
       <section class="gallarys">
-        <img src="imgs/NEXT.png" alt="" class="backBtn">
-
+        <img src="imgs/NEXT.png" alt="Previous Button" class="backBtn">
+      
         <div class="gallary-wrap">
           <div class="gallary">
-            <div>
-              <span><img src="imgs/gallary1.jpg" alt=""></span>
-              <span><img src="imgs/gallary2.jpg" alt=""></span>
+            <div class="image-container">
+              <img src="imgs/gallary1.jpg" alt="Gallery Image 1">
+              <img src="imgs/gallary2.jpg" alt="Gallery Image 2">
+              <img src="imgs/gallary3.jpg" alt="Gallery Image 3">
             </div>
-            <div>
-              <span><img src="imgs/gallary3.jpg" alt=""></span>
-              <span><img src="imgs/gallary4.jpg" alt=""></span>
+            <div class="image-container">
+              <img src="imgs/gallary4.jpg" alt="Gallery Image 4">
+              <img src="imgs/gallary5.jpg" alt="Gallery Image 5">
+              <img src="imgs/gallary6.jpg" alt="Gallery Image 6">
             </div>
-            <div>
-              <span><img src="imgs/gallary5.jpg" alt=""></span>
-              <span><img src="imgs/gallary6.jpg" alt=""></span>
-            </div>
-            <div>
-              <span><img src="imgs/gallary7.jpg" alt=""></span>
-              <span><img src="imgs/gallary8.jpg" alt=""></span>
+            <div class="image-container">
+              <img src="imgs/gallary7.jpg" alt="Gallery Image 7">
+              <img src="imgs/gallary8.jpg" alt="Gallery Image 8">
+              <img src="imgs/gallary9.jpg" alt="Gallery Image 9">
             </div>
           </div>
         </div>
-        <img src="imgs/PREVIUS.png" alt="" class="nextBtn">
-
+      
+        <img src="imgs/PREVIUS.png" alt="Next Button" class="nextBtn">
       </section>
+      
       <section class="portfolio" id="portfolio">
         <h1 class="port-logo"><span>My</span> Portfolio</h1>
         <div class="port-container">
@@ -446,32 +446,41 @@
         <div class="contact-container">
           <h1 class="contact-logo">Contact <span>Me</span></h1>
           <div class="contact-content">
-            <div class="left-contact">
-              <h2>Contact us</h2>
+            <!-- Left Contact Information -->
+            <article class="left-contact">
+              <h2>Contact Us</h2>
               <div class="social">
-                <img src="imgs/phonelogo.png" alt="" class="contact-media">
+                <img src="imgs/phonelogo.png" alt="Phone logo" class="contact-media">
                 <span class="cont-media">+967775070201</span>
               </div>
               <div class="social">
-                <img src="imgs/email icon.png" alt="" class="contact-media">
+                <img src="imgs/email icon.png" alt="Email icon" class="contact-media">
                 <span class="cont-media">ameenahmed@gmail.com</span>
               </div>
               <div class="social">
-                <img src="imgs/whatsapplogo.png" alt="" class="contact-media">
+                <img src="imgs/whatsapplogo.png" alt="WhatsApp logo" class="contact-media">
                 <span class="cont-media">+967775070201</span>
               </div>
-              
-            </div>
-            <div class="right-contact">
+            </article>
+      
+            <!-- Right Contact Form -->
+            <article class="right-contact">
               <form action="">
-                <input type="text" placeholder="Full name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Title">
-                <textarea name="" id=""></textarea>
-                <input type="submit" class="submit">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Full Name" required>
+      
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+      
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Title" required>
+      
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message" required></textarea>
+      
+                <input type="submit" class="submit" value="Send">
               </form>
-            </div>
-
+            </article>
           </div>
         </div>
       </section>

@@ -119,12 +119,12 @@
       z-index: 9999;
     }
     
-    .contact {
-        width: 100%;
-        height: auto;
-        display: none;
-    }
+   
     footer{
         display: none;
+    }
+    .d-flex{
+        display: flex;
+        flex-direction: column;
     }
 }
